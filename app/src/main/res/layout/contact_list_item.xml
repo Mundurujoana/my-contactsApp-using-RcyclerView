@@ -4,21 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cvContacts"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp"
+    >
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
+
+            <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/ivUser"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_baseline_person_outline_24"
-            tools:text="Jane Doe" />
+            app:srcCompat="@drawable/ic_baseline_account_circle_24"
+            />
 
         <TextView
             android:id="@+id/tvName"
@@ -31,7 +37,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/ivUser"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Jane Doe"
+            />
 
         <TextView
             android:id="@+id/tvPhoneNumber"
