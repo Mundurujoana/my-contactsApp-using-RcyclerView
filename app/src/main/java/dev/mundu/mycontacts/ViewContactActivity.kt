@@ -26,7 +26,7 @@ class ViewContactActivity : AppCompatActivity() {
             .centerCrop()
             .placeholder(R.drawable.ic_baseline_person_outline_24)
             .error(R.drawable.ic_baseline_error_24)
-            .networkPolicy(NetworkPolicy.OFFLINE)
+            //.networkPolicy(NetworkPolicy.OFFLINE)
             .into(binding.ivPerson)
         val name=extras?.getString("NAME","")
         binding.tvNames.text = name

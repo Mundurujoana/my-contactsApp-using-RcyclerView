@@ -38,7 +38,7 @@ class ContactRvAdapter(var contactList: List<Contact>):
 
     val context = holder.itemView.context
     holder.binding.ivUser.setOnClickListener {
-        Toast.makeText(context, "You have clicked on ${currentContact}image", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, "You have clicked on ${currentContact.name} image", Toast.LENGTH_SHORT).show()
     }
         holder.binding.cvContacts.setOnClickListener {
             val intent = Intent(context, ViewContactActivity::class.java)
